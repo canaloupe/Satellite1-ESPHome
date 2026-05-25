@@ -33,14 +33,15 @@ microphone:
     adc_type: external
     i2s_audio_id: i2s_shared
 
+
 micro_wake_word:
   id: mww
   models:
-    - model: https://fph-firmware-assets.s3.us-east-1.amazonaws.com/wake-word/hey_jarvis.json
+    - model: hey_jarvis
       id: hey_jarvis
-    - model: https://fph-firmware-assets.s3.us-east-1.amazonaws.com/wake-word/okay_nabu.json
-      id: okay_nabu
-    - model: https://fph-firmware-assets.s3.us-east-1.amazonaws.com/wake-word/stop.json
+    - model: alexa
+      id: alexa    
+    - model: https://github.com/kahrendt/microWakeWord/releases/download/stop/stop.json
       id: stop
       internal: true
   vad:
